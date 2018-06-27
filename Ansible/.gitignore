@@ -1,0 +1,13 @@
+*.log
+*.json
+/agent
+*.py[cod]
+
+# vim swap files
+*.swp
+
+# ansible retry files
+*.retry
+
+ # ansible log file
+ *.log
