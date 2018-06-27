@@ -1,0 +1,9 @@
+---
+
+yumrepo_fqdn: deployserver-george
+yumrepo_path: /opt/yumrepo
+
+cci_username: ManishChandrasekhar
+cci_token: 99985d8a3dc24ae241f5d85afa870a400bbb7195 
+cci_project: pingtest
+cci_branch: master
