@@ -29,7 +29,7 @@
 - name: get latest artefacts from circleci
   shell: |
     LATEST_BUILD=$(
-        curl -s "https://circleci.com/api/v1.1/project/github/{{ cci_username }}/{{ cci_project }}/tree/{{ cci_branch }}?circle-token={{ cci_token }}&filter=successful&filter=completed" 2>&1 |
+        curl -s "https://circleci.com/api/v1.1/project/github/{{ cci_username }}/{{ cci_project }}/tree/{{ cci_branch }}?circle-token={{ cci_token }}&filter=successful&filter=running" 2>&1 |
         grep build_num |
         awk '{print $3}' |
         sed 's/,//' |
