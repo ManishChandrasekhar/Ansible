@@ -136,3 +136,4 @@
     description: Our custom YUM repository containing successfully built artefacts from circleci
     baseurl: http://{{ yumrepo_fqdn }}/
     gpgcheck: no
+    enabled: "{{ repo_enabled }}" 
