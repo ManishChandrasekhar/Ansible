@@ -36,6 +36,9 @@
         sort -u |
         tail -n1
         )
+        if [ -z $LATEST_BUILD ]; then
+            exit 0
+        fi
         # fetch artefact from latest successful build
         ARTEFACTS=$(
     curl -s https://circleci.com/api/v1.1/project/github/{{ cci_username }}/{{ cci_project }}/${LATEST_BUILD}/artifacts?circle-token={{ cci_token }} |
